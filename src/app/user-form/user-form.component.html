@@ -1,0 +1,10 @@
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Add User</label>
+      <input type="text" [(ngModel)]="username"  name="username" class="form-control" id="username">
+      <small id="emailHelp" class="form-text text-muted">{{username}}</small>
+    </div>
+
+    <button type="button" class="btn btn-danger" (click)="ReomoveUsername()" [disabled]="!username">remove</button>
+    <button type="button" class="btn btn-primary">Submit</button>
+  </form>
